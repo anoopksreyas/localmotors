@@ -11,7 +11,7 @@ from cars.serializers import CarSerializer
 
 def carHome(request):
     '''
-    Car Home.
+    Car home.
     '''
     if request.POST:
         form = CarForm(request.POST)
