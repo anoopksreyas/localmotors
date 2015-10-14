@@ -25,5 +25,17 @@ def list_cars():
     serializer = CarSerializer(cars, many=True)
     return Response(serializer.data)
 
+def hack():
+     r = raw_input("Enter the range:")
+     for i in xrange(1, int(r)+1):
+        if i%3==0 and i%5==0:
+             print "FizzBuzz" + "\n"
+        elif i%3==0:
+            print "Fizz" + "\n"
+        elif i%5==0:
+            print "Buzz" + "\n"
+        else:
+            print "%s \n" %i
+
 
 
